@@ -17,11 +17,14 @@ void ofApp::draw(){
     
     float x;
     
-    for (float x = 0; x <= 1000; x += 20)
+    for (float x = 0; x <= 500; x += 20)
     {
         ofDrawLine(x,0,0,x);
-        ofSetColor(255, 255, 255);
     }
     
+    for (float x = 0; x <= 500; x += 10)
+    {
+        ofDrawLine(x,500-x, x+500,1000-x);
+    }
     
 }
